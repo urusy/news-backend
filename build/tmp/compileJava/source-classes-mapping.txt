@@ -1,2 +1,0 @@
-com/urusy/news/NewsApplication.java
- com.urusy.news.NewsApplication

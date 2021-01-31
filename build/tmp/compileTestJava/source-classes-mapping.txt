@@ -1,2 +1,0 @@
-com/urusy/news/NewsApplicationTests.java
- com.urusy.news.NewsApplicationTests
