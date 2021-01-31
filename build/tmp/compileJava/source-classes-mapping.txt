@@ -1,0 +1,4 @@
+com/urusy/news/NewsApplication.java
+ com.urusy.news.NewsApplication
+com/urusy/news/contoroller/TestController.java
+ com.urusy.news.contoroller.TestController
