@@ -1,0 +1,2 @@
+schedule:
+  message: "0 * * * * *" # Run at 0 second every minutes.
