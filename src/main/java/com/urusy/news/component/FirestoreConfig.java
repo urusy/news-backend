@@ -17,7 +17,8 @@ public class FirestoreConfig {
     private Firestore db;
 
     public FirestoreConfig() throws IOException {
-        InputStream serviceAccount = new FileInputStream("/Users/hiroyoshi/dev/gcloud_credentials/news-backend-keyfile.json");
+        // todo application.ymlから取得するように修正
+        InputStream serviceAccount = new FileInputStream("../gcloud_credentials/news-backend-keyfile.json");
         GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(credentials)
