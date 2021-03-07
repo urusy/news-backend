@@ -20,6 +20,7 @@ repositories {
 
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-integration'
+	compile 'com.google.firebase:firebase-admin:7.1.0'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
