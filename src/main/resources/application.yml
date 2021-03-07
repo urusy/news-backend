@@ -1,2 +1,6 @@
 schedule:
   hacker-news: "0 0 * * * *"
+  dev-to: "0 10 * * * *"
+service:
+  dev-to:
+    api-key:
