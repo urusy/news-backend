@@ -32,7 +32,7 @@ public class DevToGatewayServiceImpl {
 
         RestTemplate restTemplate = new RestTemplate();
 
-        String url = "https://dev.to/api/articles?top>=" + limit;
+        String url = "https://dev.to/api/articles?state=rising&top>=" + limit;
 
         var response = restTemplate.exchange(url, HttpMethod.GET, entity, DevToArticleResponseDto[].class);
 
