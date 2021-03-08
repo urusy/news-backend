@@ -66,6 +66,7 @@ public class DevToGatewayServiceImpl {
                     .tags(item.getTags())
                     .user(item.getUser())
                     .flareTag(item.getFlareTag())
+                    .date(item.getPublishedAt().getYear() + "-" + String.format("%02d", item.getPublishedAt().getMonthValue()) + "-" + String.format("%02d", item.getPublishedAt().getDayOfMonth()))
                     .build();
 
             articles.add(article);
