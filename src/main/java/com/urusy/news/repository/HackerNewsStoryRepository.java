@@ -12,6 +12,6 @@ public class HackerNewsStoryRepository {
     private final FirestoreConfig firestoreConfig;
 
     public void save(HackerNewsStoryEntity story) {
-        firestoreConfig.getDb().collection("hacker-news").document(String.valueOf(story.getId())).create(story);
+        firestoreConfig.getDb().collection("hacker-news").document(String.valueOf(story.getId())).set(story);
     }
 }

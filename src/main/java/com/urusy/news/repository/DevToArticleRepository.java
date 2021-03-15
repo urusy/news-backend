@@ -12,6 +12,6 @@ public class DevToArticleRepository {
     private final FirestoreConfig firestoreConfig;
 
     public void save(DevToArticleEntity article) {
-        firestoreConfig.getDb().collection("dev-to").document(String.valueOf(article.getId())).create(article);
+        firestoreConfig.getDb().collection("dev-to").document(String.valueOf(article.getId())).set(article);
     }
 }
