@@ -40,6 +40,8 @@ public class DevToGatewayServiceImpl {
         DevToArticleEntity article;
 
         for (var item : response.getBody()) {
+            var publishedAt = item.getPublishedAt().plusHours(9);
+
             article = DevToArticleEntity.builder()
                     .typeOf(item.getTypeOf())
                     .id(item.getId())
@@ -66,7 +68,7 @@ public class DevToGatewayServiceImpl {
                     .tags(item.getTags())
                     .user(item.getUser())
                     .flareTag(item.getFlareTag())
-                    .date(item.getPublishedAt().getYear() + "-" + String.format("%02d", item.getPublishedAt().getMonthValue()) + "-" + String.format("%02d", item.getPublishedAt().getDayOfMonth()))
+                    .date(publishedAt.getYear() + "-" + String.format("%02d", publishedAt.getMonthValue()) + "-" + String.format("%02d", publishedAt.getDayOfMonth()))
                     .build();
 
             articles.add(article);
